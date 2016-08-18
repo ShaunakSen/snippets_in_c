@@ -40,7 +40,7 @@ void inOrder(struct node* node){
 int calculateHeight(struct node* root){
     int lh,rh,maxHt;
     if(root == NULL)
-        return -1;
+        return 0;
     lh = calculateHeight(root->left);
     rh = calculateHeight(root->right);
     maxHt = (lh > rh)?lh:rh;
